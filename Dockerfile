@@ -21,6 +21,7 @@ RUN set -x \
     --with-http_realip_module \
     --with-http_v2_module \
     --with-http_v3_module \
+    --with-http_auth_basic_module \
     --with-compat \
     --with-threads \
     --with-http_sub_module \
