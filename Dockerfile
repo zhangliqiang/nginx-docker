@@ -13,7 +13,7 @@ RUN set -x \
     && wget http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz \
     && tar -zxvf nginx-$NGINX_VERSION.tar.gz \
     && cd nginx-$NGINX_VERSION \
-    && sed -i "s#Server: nginx#Server: fit2cloud-gateway#" src/http/ngx_http_header_filter_module.c \
+    && sed -i "s#Server: nginx#Server: FIT2CLOUD-GATEWAY#" src/http/ngx_http_header_filter_module.c \
     && ./configure --user=nobody --group=nobody \
     --with-http_ssl_module \
     --with-http_gzip_static_module \
