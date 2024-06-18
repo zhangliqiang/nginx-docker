@@ -28,7 +28,7 @@ RUN set -x \
     && make install \
     && rm -rf /tmp/* /var/tmp/* /var/cache/apk/*
 
-COPY nginx.conf /usr/local/nginx/conf/nginx.conf
+COPY conf/nginx.conf /usr/local/nginx/conf/nginx.conf
 
 EXPOSE 80 443
 
