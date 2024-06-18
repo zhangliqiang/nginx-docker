@@ -4,9 +4,10 @@ services:
     image: registry.fit2cloud.com/public/nginx:1.27.0
     container_name: nginx
     volumes:
-      - /tmp:/tmp
-      #- /usr/local/nginx/conf/nginx.conf:/usr/local/nginx/conf/nginx.conf
-      #- /usr/local/nginx/conf/conf.d:/usr/local/nginx/conf/conf.d
+      - /opt/nginx/conf/nginx.conf:/usr/local/nginx/conf/nginx.conf
+      - /opt/nginx/conf/conf.d:/usr/local/nginx/conf/conf.d
+      - /opt/nginx/ssl:/opt/nginx/ssl
+      - /opt/nginx/logs:/usr/local/nginx/logs
     ports:
       - 80:80
       - 443:443
