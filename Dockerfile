@@ -1,8 +1,8 @@
-FROM alpine:3.20
+FROM alpine
 
 MAINTAINER zhangliqiang <https://github.com/zhangliqiang/nginx-docker>
 
-ENV NGINX_VERSION 1.27.0
+ENV NGINX_VERSION 1.31.9
 
 RUN set -x \
     && addgroup -g 101 -S nginx \
